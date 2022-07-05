@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
     <head>
-       <title>FPCO Waivers</title></head>
-    <style>
+       <title>FPCO Waivers</title>
+       <style>
         .collapsible {
           background-color: #eee;
           color: #444;
@@ -27,23 +27,8 @@
         }
 
         body{ margin:0 auto; }
-    </style>
-    <script>
-        var coll = document.getElementsByClassName("collapsible");
-        var i;
-
-        for (i = 0; i < coll.length; i++) {
-          coll[i].addEventListener("click", function() {
-            this.classList.toggle("active");
-            var content = this.nextElementSibling;
-            if (content.style.display === "block") {
-              content.style.display = "none";
-            } else {
-              content.style.display = "block";
-            }
-          });
-        }
-    </script>
+        </style>
+    </head>
 
     <body>
         <h1>FPCO Waivers</h1>
@@ -63,5 +48,21 @@
             <div class="content">
               <p>Lorem ipsum...</p>
             </div>
+        <script>
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
+
+            for (i = 0; i < coll.length; i++) {
+              coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                  content.style.display = "none";
+                } else {
+                  content.style.display = "block";
+                }
+              });
+            }
+        </script>
     </body>
 </html>
