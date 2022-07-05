@@ -1,1 +1,39 @@
-Hello World
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>FPCO Waivers</title>
+    </head>
+    
+    <!-- CSS -->
+    #more {display: none;}
+    <!-- CSS -->
+
+    <script>
+    function readMore() {
+        var dots = document.getElementById("dots");
+        var moreText = document.getElementById("more");
+        var btnText = document.getElementById("myBtn");
+
+        if (dots.style.display === "none") {
+            dots.style.display = "inline";
+            btnText.innerHTML = "Read more";
+            moreText.style.display = "none";
+        } else {
+            dots.style.display = "none";
+            btnText.innerHTML = "Read less";
+            moreText.style.display = "inlinee";
+        }
+    }
+    </script>
+
+    <body>
+        <h1>Image Release Waiver</h1>
+<p><em>Image Release</em>
+<span id="dots">...</span><span id="more">
+I hereby grant permission to First Presbyterian Church of Orlando to use my image (or that of my minor child/children) which includes the display, distribution, publication, transmission, or otherwise use of photographs, images, and/or video taken for use in materials that include, but may not be limited to, printed materials such as brochures and newsletters, videos, social media and digital images such as those on the First Presbyterian Church of Orlando website. Unrestricted usage: I give unrestricted permission for my image (or that of my minor child/children) to be used in print, video, social and digital media. I agree that these images may be used by First Presbyterian Church of Orlando for a variety of purposes and that these images may be used without further notification to me.</span></p>
+
+<button onclick="readMore()" id="myBtn">Read more</button>
+        <h1>Release of Liability</h1>
+        <h1>Facility Use Waiver</h1>
+    </body>
+</html>
